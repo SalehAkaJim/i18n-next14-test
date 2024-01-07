@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { languages, fallbackLng } from '../i18n/settings';
-import { useTranslation } from '../i18n';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { languages, fallbackLng } from './i18n/settings';
+import { useTranslation } from './i18n';
+import { Header } from './[lng]/components/Header';
+import { Footer } from './[lng]/components/Footer';
 
 export default async function Page({
   params: { lng },

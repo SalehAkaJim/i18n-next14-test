@@ -1,0 +1,11 @@
+{
+  "h1": "یک متن پیش فرض",
+  "title": "خانه",
+  "to-client-page": "رفتن به صفحه کلاینت",
+  "to-second-page": "رفتن به صفحه دوم",
+  "welcome": "خوش آمدید",
+  "blog": {
+    "text": "چک کنید",
+    "link": "https://locize.com/blog/next-app-dir-i18n/"
+  }
+}

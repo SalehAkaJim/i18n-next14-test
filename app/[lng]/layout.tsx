@@ -1,17 +1,6 @@
-import './global.css';
-
-import { dir } from 'i18next';
-import { languages } from '../i18n/settings';
-
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
-}
+import { ThemeProvider } from '@mui/material/styles';
+import { lightTheme, pinkTheme, darkTheme } from '../../themes/theme';
 
 export default function RootLayout({ children, params: { lng } }: any) {
-  return (
-    <html lang={lng} dir={dir(lng)}>
-      <head />
-      <body>{children}</body>
-    </html>
-  );
+  return <ThemeProvider theme={lightTheme}>{children}</ThemeProvider>;
 }
